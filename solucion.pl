@@ -10,10 +10,7 @@
 %  @param +Correo: Correo electrónico institucional.
 %  @param +Grado:  Grado del alumno (Ciber | IA).
 
-alumno('Joan Clarke', 'j.clarke.2026@alumnos.urjc.es', 'Ciber').
-
-%% Ejemplo alumno de IA
-% alumno('John McCarthy', 'j.mccarthy.2026@alumnos.urjc.es', 'IA').
+alumno('Ignacio De Meer Dominguez', 'i.demeer.2026@alumnos.urjc.es', 'Ciber').
 
 
 %% Este ejercicio esta ya resuelto
@@ -30,7 +27,10 @@ proof(ejercicio01,
 
 proof(ejercicio02,
       [
-          % Completar con la demostración
+            'Premisa'(1),
+            'Supuesto'(!p),
+            'E' --> (1,2),
+            'I' !(2)
       ]).
 
 
