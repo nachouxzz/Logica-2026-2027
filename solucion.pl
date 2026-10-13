@@ -55,6 +55,27 @@ proof(ejercicio04,
               'I' !(11),
               'E' !(12)
       ]).
+      
+proof(ejercicio05,
+      [
+
+      ]).
+
+proof(ejercicio06,
+      [
+              'Premisa'(1),
+              'Supuesto'(p and !r),
+              'E' and a(2),
+              'E' and b(2),
+              'Supuesto'(q),
+              'I' and (3,5),
+              'E' --> (1,6),
+              'I' and (7,4),
+              'I' --> (5,8),
+              'I' ! (9),
+              'I' --> (2,10)
+      ]).
+      
 
 % Incluir el resto de demostraciones
 
@@ -64,3 +85,23 @@ proof(ejercicio04,
 %
 % rule(+Nombre, +Premisas, +Consecuente, +Demostracion)
 rule(+LM, +FA --> FB, !FB, +!FA,
+        'Premisa'(1),
+        'Supuesto'(!(!p or !q)),
+        'Supuesto'(!p),
+        'I' or a(3,!q),
+        'I' and (4,2),
+        'I' --> (3,5),
+        'I' !(6),
+        'E' !(7),
+        'Supuesto'(!q),
+        'I' or b(!p,9),
+        'I' and (10,2),
+        'I' --> (9,11),
+        'I' !(12),
+        'E' !(13),
+        'I' and (8,14),
+        'I' and (15,1),
+        'I' --> (2,16),
+        'I' !(17),
+        'E' !(18)
+        )
