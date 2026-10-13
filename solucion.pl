@@ -30,7 +30,7 @@ proof(ejercicio01,
 
 proof(ejercicio02,
       [
-          % Completar con la demostración
+          % Completar con la demostració holan
       ]).
 
 
