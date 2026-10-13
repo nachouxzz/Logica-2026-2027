@@ -84,7 +84,7 @@ proof(ejercicio06,
 %% Incluir reglas derivadas con el predicado rule/4    
 %
 % rule(+Nombre, +Premisas, +Consecuente, +Demostracion)
-rule(+LM, +FA --> FB, !FB, +!FA,
+rule(+LM, +!(p and q), +!p or !q,,
         'Premisa'(1),
         'Supuesto'(!(!p or !q)),
         'Supuesto'(!p),
