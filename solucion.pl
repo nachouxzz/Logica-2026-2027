@@ -32,7 +32,29 @@ proof(ejercicio02,
             'E' --> (1,2),
             'I' !(2)
       ]).
-
+proof(ejercicio03,
+      [
+        'Premisa'(1),
+        'Premisa'(2),
+        'MT'(1,2),
+        'LM'(3)
+      ]).
+proof(ejercicio04,
+      [
+              'Premisa'(1),
+              'Premisa'(2),
+              'Premisa'(3),
+              'Premisa'(4),
+              'Supuesto'(!s),
+              'MT'(3,5),
+              'MT'(2,4),
+              'I' and (7,6),
+              'LM2'(8),
+              'I' and (1,9),
+              'I' --> (5,10),
+              'I' !(11),
+              'E' !(12)
+      ]).
 
 % Incluir el resto de demostraciones
 
@@ -41,3 +63,4 @@ proof(ejercicio02,
 %% Incluir reglas derivadas con el predicado rule/4    
 %
 % rule(+Nombre, +Premisas, +Consecuente, +Demostracion)
+rule(+LM, +FA --> FB, !FB, +!FA,
